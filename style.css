@@ -1,0 +1,781 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+a{
+    text-decoration: none;
+}
+        /* -----------navbar------------ */
+.nav{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 1.3rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:  1px 0 10px rgba(128, 128, 128, 0.249);
+}
+.second-logo img{
+    height: 32px;
+    width: 46px;
+}
+.first-logo{
+    display: none;
+    font-size: 22px;
+    font-weight: 650;
+}
+.list a{
+    padding-left: 1.5rem;
+     color: black;
+     font-size: 16px;
+     font-weight: 550;
+}
+.sup{
+    color: red;
+}
+.search-area{
+    margin-left: 0.5rem;
+      padding: 0.5rem 0;
+      padding-right: 3rem;
+      border: none;
+      width: 370px;
+      border-radius: 0.3rem;
+      background: #f5f5f6;
+}
+.icon-text{
+    font-size: 12px;
+}
+.temp-icon{
+    display: none;
+}
+.profile, .first-perma, .second-perma{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search{
+    margin-left: 8rem;
+    padding-top: 0.2rem;
+    padding-left: 0.6rem;
+    border-radius: 0.3rem;
+    background: #f5f5f6;
+}
+.icon, .perma-icon{
+    display: flex;
+    gap: 1.5rem;
+}
+@media screen and (max-width:1330px) {
+    .search{
+        margin-left: 5.5rem;
+    }
+    .search-area{
+        width: 330px;
+    }
+    .nav{
+        padding: 1.3rem 3.2rem;
+    }
+}
+@media screen and (max-width:1220px) {
+    .search-area{
+        width: 260px;
+    }
+    .nav{
+        padding: 1.3rem 2.5rem;
+    }
+     .search{
+        margin-left: 4rem;
+    }
+    .list a{
+        padding-left: 1rem;
+    }
+}
+@media screen and (max-width:1050px) {
+    .search-area{
+        width: 160px;
+    }
+    .search{
+       margin-left: 2rem;
+   }
+   .nav{
+       padding: 1.3rem 1.95rem;
+   }
+}
+@media screen and (max-width:975px) {
+    .search{
+        display: none;
+    }
+    .list{
+        margin-left: -8rem;
+    }
+    .temp-icon{
+        display: flex;
+        gap: 1.5rem;
+    }
+    .temp-icon, .perma-icon{
+        font-size: 24px;
+    }
+    .profile, .icon-text{
+        display: none;
+    }
+}
+@media screen and (max-width:830px) {
+    .second-logo, .list{
+        display: none;
+    }
+    .first-logo{
+        display: block;
+    }
+    .nav{
+    padding: 1.3rem 1.4rem;
+    }
+}
+@media screen and (max-width:420px) {
+    
+    .temp-icon, .perma-icon, .first-logo{
+        font-size: 19px;
+    }
+    .nav{
+    padding: 1.3rem 0.8rem;
+    }
+}
+    /* -----------navbar-complete------------ */
+
+    /* ------------------pic------------------- */
+     .pic img{
+        margin-top: 3rem ;
+        width: 90vw;
+        height: 370px;
+     }
+@media screen and (max-width:1000px){
+    .pic{
+        display: none;
+    }
+}
+@media screen and (max-width:1500px){
+    .pic img{
+        
+        height: 320px;
+    }
+}
+@media screen and (max-width:1150px){
+    .pic img{
+        
+        height: 260px;
+    }
+}
+
+    /* -----------pic-complete------------ */
+
+
+    /* -----------container------------ */
+
+    .container{
+        display: none;
+    }
+.category{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 0.7rem;
+}
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
+    width: 250px;
+    height: 320px;
+    border-radius: 1rem;
+    margin: 1rem auto;
+}
+.box1{
+    background: url("images/3.webp");
+    background-size: cover;
+    background-position: center;
+}
+.box2{
+    background: url("images/4.webp");
+    background-size: cover;
+    background-position: center;
+}
+.box3{
+    background: url("images/5.webp");
+    background-size: cover;
+    background-position: center;
+}
+.box4{
+    background: url("images/6.webp");
+    background-size: cover;
+    background-position: center;
+}
+.box5{
+    background: url("images/7.webp");
+    background-size: cover;
+    background-position: center;
+}
+.box6{
+    background: url("images/8.webp");
+    background-size: cover;
+    background-position: center;
+}
+.box7{
+    background: url("images/9.webp");
+    background-size: cover;
+    background-position: center;
+}
+.box8{
+    background: url("images/10.webp");
+    background-size: cover;
+    background-position: center;
+}
+.box9{
+    background: url("images/11.webp");
+    background-size: cover;
+    background-position: center;
+}
+.box10{
+    background: url("images/12.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width:1380px){
+    
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
+    width: 215px;
+    height: 295px;
+  }
+}
+@media screen and (max-width:1260px){
+    
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
+    width: 185px;
+    height: 275px;
+ }
+}
+@media screen and (max-width:1080px){
+    
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
+    width: 170px;
+    height: 250px;
+ }
+}
+@media screen and (max-width:1000px){
+    
+    .container{
+        display: block;
+    }
+}
+@media screen and (max-width:975px){
+    
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
+    width: 150px;
+    height: 220px;
+ }
+}
+@media screen and (max-width:828px){
+    
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
+    width: 125px;
+    height: 200px;
+ }
+}
+@media screen and (max-width:670px){
+    
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
+    width: 105px;
+    height: 150px;
+ }
+}
+@media screen and (max-width:590px){
+    
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
+    width: 80px;
+    height: 110px;
+ }
+ .category{
+    grid-template-columns: repeat(4,1fr);
+  }
+  .box9{
+       grid-row: 3;
+       grid-column: 2;
+  }
+  .box10{
+       grid-row: 3;
+       grid-column: 3;
+  }
+}
+@media screen and (max-width:390px){
+    
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
+    width: 75px;
+    height: 90px;
+ }
+}
+@media screen and (max-width:340px){
+    
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
+    width: 70px;
+    height: 85px;
+ }
+}
+
+
+    /* -----------container-complete------------ */
+
+    /* -----------brands------------ */
+
+    .brands{
+        width: 98vw;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap: 0;
+    }
+    .brand1, .brand2, .brand3, .brand4, .brand5, .brand6{
+        margin-top: 3rem;
+        height: 328px;
+        width: 250px;
+    }
+    .brand1{
+        background: url("images/22.webp");
+        background-size: cover;
+        background-position: center;
+    }
+    .brand2{
+        background: url("images/23.webp");
+        background-size: cover;
+        background-position: center;
+    }
+    .brand3{
+        background: url("images/24.webp");
+        background-size: cover;
+        background-position: center;
+    }
+    .brand4{
+        background: url("images/25.webp");
+        background-size: cover;
+        background-position: center;
+    }
+    .brand5{
+        background: url("images/26.webp");
+        background-size: cover;
+        background-position: center;
+    }
+    .brand6{
+        background: url("images/22.webp");
+        background-size: cover;
+        background-position: center;
+    }
+    .h1{
+        margin-top: 4rem;
+       margin-left: 2rem;
+       color: rgb(49, 49, 49);
+    }
+    .on{
+        background: url("images/24.webp");
+        background-size: cover;
+        background-position: center;
+    }
+    .tw{
+        background: url("images/26.webp");
+        background-size: cover;
+        background-position: center;
+    }
+    .th{
+        background: url("images/22.webp");
+        background-size: cover;
+        background-position: center;
+    }
+    .fo{
+        background: url("images/23.webp");
+        background-size: cover;
+        background-position: center;
+    }
+    .fi{
+        background: url("images/22.webp");
+        background-size: cover;
+        background-position: center;
+    }
+    .si{
+        background: url("images/25.webp");
+        background-size: cover;
+        background-position: center;
+    }
+
+    
+    @media screen and (max-width:1500px) {
+        .brand1, .brand2, .brand3, .brand4, .brand5, .brand6{
+            height: 310px;
+            width: 220px;
+        }
+    }
+    @media screen and (max-width:1350px) {
+        .brand1, .brand2, .brand3, .brand4, .brand5, .brand6{
+            height: 280px;
+            width: 213px;
+        }
+
+    }
+    @media screen and (max-width:1270px) {
+        .brand1, .brand2, .brand3, .brand4, .brand5, .brand6{
+            height: 220px;
+            width: 170px;
+        }
+
+    }
+
+    @media screen and (max-width:1000px) {
+        .brands, .h1{
+            display: none;
+        }
+    }
+
+    /* -----------brands-complete------------ */
+
+    /* -----------shop------------ */
+
+    .shop{
+        margin: 0 auto;
+        margin-top: 3rem;
+        width: 95vw;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+    .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10, .s11, .s12, .s13, .s14, .s15, .s16, .s17, .s18, .s19, .s20, .s21{
+        width: 200px;
+        height: 260px;
+        background: url("images/28.jpg");
+        background-size: cover;
+        
+    }
+    .s19, .s20, .s21{
+        width: 180px;
+        height: 240px;
+    }
+    .extra{
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (max-width:1270px) {
+        .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10, .s11, .s12, .s13, .s14, .s15, .s16, .s17, .s18{
+            width: 160px;
+            height: 210px;
+        }
+        .s19, .s20, .s21{
+            width: 140px;
+            height: 200px;
+        }
+
+    }
+    @media screen and (max-width:1000px) {
+        .shop, .extra{
+            display: none;
+        }
+    }
+    
+    /* -----------shop-complete------------ */
+
+    /* -----------app-store------------ */
+      
+    .app{
+        display: none;
+    }
+    .app img{
+        width: 100%;
+        padding: 0.4rem;
+    }
+    .app2 img{
+        margin-top: 1.5rem;
+        width: 100%;
+        padding: 0.4rem;
+    }
+
+    
+    @media screen and (max-width:1000px) {
+        .app{
+            display: block;
+        }
+        
+        .app2{
+            display: none;
+        }
+    }
+    
+    /* -----------app-complete------------ */
+    
+    /* -----------offer------------ */
+    
+    .offer{
+        display: none;
+    }
+    .offer-img1{
+        width: 100%;
+     }
+     .offer-img2, .offer-img3{
+        margin: -0.2rem -0.3rem;
+        width: 50.2vw;
+     }
+
+     @media screen and (max-width:1000px) {
+         .offer{
+             display: block;
+         }
+     }
+   
+    @media screen and (max-width:590px) {
+         
+     .offer-img2, .offer-img3{
+        width: 50.5vw;
+     }           
+    }
+   
+    @media screen and (max-width:380px) {
+         
+     .offer-img2, .offer-img3{
+        margin: -0.15rem -0.3rem;
+     }           
+    }
+   
+    @media screen and (max-width:340px) {
+         
+     .offer-img2, .offer-img3{
+        margin: -0.217rem -0.3rem;
+        width: 51vw;
+     }           
+    }
+     
+    /* -----------offer-complete------------ */
+    
+    /* -----------price-complete------------ */
+    
+    .price{
+        display: none;
+        margin-top: 1.4rem;
+    }
+    h2,h5{
+        margin-left: 2rem;
+        margin-top: 0.1rem;
+        display: none;
+    }
+    h2{
+        margin-top: 3rem;
+        color: rgb(22, 22, 22);
+    }
+    .after-img, .sign-up{
+        display: none;
+    }
+    .price-container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .p99, .p199, .p299, .p399{
+        width: 25vw;
+    }
+
+    
+     @media screen and (max-width:1000px) {
+         .price, .after-img, .sign-up{
+             display: block;
+         }
+     }
+
+    @media screen and (max-width:1000px) {
+        h2,h5{
+            display: block;
+        }
+    }
+    @media screen and (max-width:530px) {
+        
+    h2,h5{
+        margin-left: 1.5rem;
+    }
+        h2{
+            margin-top: 2rem;
+            font-size: 1.25rem;
+        }
+        h5{
+            font-size: 0.8rem;
+        }
+    }
+    @media screen and (max-width:400px) {
+        h2{
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+        h5{
+            font-size: 0.65rem;
+        }
+        h2,h5{
+            margin-left: 1.1rem;
+        }
+    }
+
+    /* -----------price-complete------------ */
+    
+    /* -----------loved-brands------------ */
+
+   .mob-h{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #01589b;
+   }
+   .loved-brands{
+    display: none;
+   }
+   .love-brand-img{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 25vw;
+   }
+   .cursive{
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 450;
+    color: black;
+   }
+
+
+  @media screen and (max-width:1000px) {
+    .loved-brands{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+  }
+   @media screen and (max-width:720px)  {
+          .mob-h{
+            font-size: 1.3rem;
+          } 
+   } 
+
+    /* --------loved-brands-complete--------- */
+
+    .separation{
+        width: 90vw;
+        margin: 0 auto;
+        border: 0.1px solid rgba(210, 210, 210, 0.348);
+    }
+    
+    /* -----------footer------------ */
+     .footer{
+        background: #FAFBFC;
+     }
+    .foot{
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .foot-one{
+        font-size: 1.2rem;
+        font-weight: 550;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        width: 25vw;
+    }
+    .foot-para{
+         margin: 1.5rem 0;
+    }
+    .foot-two{
+        font-size: 1.2rem;
+        font-weight: 550;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        width: 25vw;
+    }
+    .foot-three{
+        font-size: 1.2rem;
+        font-weight: 550;
+        width: 25vw;
+    }
+    
+    .foot-four{
+        width: 20vw;
+    }
+    .app-icons2{
+        color: gray;
+    }
+    .four-one, .four-two{
+        margin-top: 1.3rem;
+        display: flex;
+        align-items: center;
+        gap:0.7rem;
+    }
+    .para-four{
+        font-size: 1.4rem;
+        font-weight: 550;
+    }
+    .foot-anchor{
+        color: gray;
+        font-weight: 500;
+    }
+    .footer-two{
+        padding: 3rem;
+    }
+    .footer-two-para{
+        font-size: 1.22rem;
+        font-weight: 550;
+    }
+    .footer-two-anchor{
+        font-size: 1.15rem;
+        font-weight: 500;
+    }
+    
+    
+    @media screen and (max-width:800px) {
+        
+    .para-four{
+        font-size: 1.1rem;
+    }
+    .foot-three, .foot-two, .foot-one, .footer-two-para{
+        font-size: 1.07rem;
+    }
+    .footer-two-anchor{
+        font-size: 0.9rem;
+    }
+    .desc{
+        font-size: 1rem;
+    }
+    .foot{
+        padding: 2rem;
+    }
+    
+    }
+
+    @media screen and (max-width:750px) {
+        
+    .para-four{
+        font-size: 1rem;
+    }
+    .foot-three, .foot-two, .foot-one, .footer-two-para{
+        font-size: 0.9rem;
+    }
+    .app-icons2, .app-icons{
+        font-size: 11px;
+    }
+    .four-icon{
+        font-size: 25px;
+    }
+    .foot{
+       grid-template-columns: repeat(2,1fr);
+       row-gap: 2rem;
+    }
+    
+    }
+
+    @media screen and (max-width:550px) {
+         .desc{
+             font-size: 0.9rem;
+         }
+         .foot-one, .foot-two, .foot-three, .foot-four{
+            width: 45vw;
+         }
+         .up{
+            display: none;
+         }
+    }
+     
+         
+       
+    /* -----------footer-complete------------ */
+    
